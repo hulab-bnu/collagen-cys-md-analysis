@@ -1,0 +1,22 @@
+# General CHARMM single-trajectory MM/PBSA input.
+# Keep comments on their own lines; inline comments are not supported.
+
+&general
+  startframe = 1,
+  endframe = 9999999,
+  interval = 1,
+  verbose = 1,
+  PBRadii = 7,
+/
+
+&pb
+  istrng = 0.150,
+  fillratio = 4.0,
+  radiopt = 0,
+/
+
+&decomp
+  idecomp = 2,
+  dec_verbose = 1,
+  print_res = "within 6",
+/

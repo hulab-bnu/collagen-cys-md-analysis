@@ -1,0 +1,27 @@
+# Single-trajectory MM/PBSA input for the ABC-versus-DEF collagen-trimer complex.
+# This file is read by run_mmpbsa_abc_def.sh after the trajectory has already been sampled.
+# Keep comments on their own lines: gmx_MMPBSA does not support inline comments.
+
+&general
+  startframe = 1,
+  endframe = 9999999,
+  interval = 1,
+  verbose = 1,
+  PBRadii = 7,
+/
+
+# This trajectory uses a CHARMM topology. PBRadii=7 selects the CHARMM-specific
+# PB radii set, and radiopt=0 uses the radii stored in the generated prmtop.
+&pb
+  istrng = 0.150,
+  fillratio = 4.0,
+  radiopt = 0,
+/
+
+# Per-residue decomposition, restricted to residues within 6 A of the binding partner.
+# idecomp=2 gives per-residue (not pairwise) contributions and keeps output manageable.
+&decomp
+  idecomp = 2,
+  dec_verbose = 1,
+  print_res = "within 6",
+/

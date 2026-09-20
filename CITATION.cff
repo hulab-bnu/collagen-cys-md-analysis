@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the archived release and the associated article."
+title: "Collagen Cys MD Analysis"
+type: software
+authors:
+  - name: "Jingbo and contributors"
+version: 1.0.0
+date-released: 2026-09-20
+license: MIT
+repository-code: "https://github.com/hulab-bnu/collagen-cys-md-analysis"
+url: "https://github.com/hulab-bnu/collagen-cys-md-analysis"
+keywords:
+  - collagen
+  - cysteine
+  - molecular dynamics
+  - GROMACS
+  - MM/PBSA
+  - DCCM
+  - free-energy landscape

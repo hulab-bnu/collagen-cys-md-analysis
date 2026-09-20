@@ -1,0 +1,49 @@
+# Local data and generated results
+data/*
+!data/README.md
+results/*
+!results/README.md
+cache/
+
+# Molecular-dynamics trajectories and run products
+*.xtc
+*.trr
+*.tng
+*.edr
+*.tpr
+*.cpt
+*.gro
+*.xvg
+*.ndx
+*.log
+*.pse
+
+# Large tabular, archive and rendered outputs
+*.xlsx
+*.xls
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.png
+*.tif
+*.tiff
+*.pdf
+
+# Python and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.conda/
+.DS_Store
+Thumbs.db
+
+# Matplotlib and temporary analysis caches
+.matplotlib/
+.mplconfig/
+*.tmp
+*.bak
